@@ -1,0 +1,99 @@
+@import 'config';
+@import 'inputs';
+@import 'button';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primary-color;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.form-wraper  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 400px;
+    width: 65%;
+    font-family: $font-stack;
+
+    h1, p {
+        padding: 20px 0px;
+        color: $dark-grey;
+        font-family: $font-stack;
+
+    }
+
+    p {
+        line-height: 20px; 
+        padding: 10px 0px;
+        font-size: $parag-font-size;
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+    }
+}
+
+.heading {
+    width: 35%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $secondary-color;
+
+    h2, p {
+        font-family: $font-stack;
+        color: $white-grey;
+    }
+    
+    p {
+        margin-top: 50px;
+        line-height: 20px;
+        padding: 0 180px;
+        text-align: left;
+        font-size: $parag-font-size;
+    }
+}
+
+
+@media only screen and (max-width: $break-medium) {
+    .form-wraper {
+        padding: 0 150px;
+    }
+
+    .heading p {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: $break-small) {
+    .form-wraper {
+        padding: 0 50px;
+        margin-top: 200px;
+    }
+
+    .heading p {
+        padding: 0 50px;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+}

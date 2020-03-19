@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <form class="form-wraper" method="POST" name="sign up">
+
+            <h1>Let's set up your account</h1>
+            <p>Already have an account? <a href="#">Sign in</a></p>
+
+            <div class="input-wraper">
+                <input class="input" type="text" id="name" name="name" onblur="onBlur(event)">
+                <label class="label" for="name">Your name</label>
+            </div>
+
+            <div class="input-wraper">
+                <input class="input" type="email" id="email" name="email" onblur="onBlur(event)">
+                <label class="label" for="email">Email address</label>
+                <p class="email-warning">Please enter a valid email address</p>
+            </div>
+
+            <select class="select">
+                <option disabled selected hidden>I would describe my user type as</option>
+                <option value="manager">Manager</option>
+                <option value="designer">Designer</option>
+                <option value="developer">Developer</option>
+            </select>
+
+            <div class="input-wraper">
+                <input class="input" class="eye-svg" type="password" id="password" name="password" onblur="onBlur(event)">
+                <label class="label" for="password">Password</label>
+                <p class="password-count">Minimum 8 characters</p>
+            </div>
+
+            <button class="next-btn">Next</button>
+
+            <p>By clicking the "Next" button, you agree to creating a free account, and to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </form>
+
+        <div class="heading">
+            <h2>Dummy Heading</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cumque, quasi quo obcaecati nobis eaque quod natus doloremque ipsa error.</p>
+        </div>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+</html>

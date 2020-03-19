@@ -1,0 +1,77 @@
+
+.input-wraper {
+    position: relative;
+    display: grid;
+    border: 1px ;
+    padding: 10px 0;
+
+    .input {
+        background: $primary-color;
+        width: 100%;
+        padding: 10px 10px 10px 20px;
+        border-radius: 5px;
+        border: 1px solid $light-grey;
+        height: $input-height;
+        font-size: $input-font-size;
+    }
+
+    .label {
+        position: absolute;
+        transition: all 0.2s;
+        top: 25px;
+        left: 20px;
+        padding: 0 2px;
+        font-size: $input-font-size;
+        background: $primary-color;
+        color: $label-grey;
+        font-family: $font-stack;
+    }
+
+    .input:focus + .label {
+        top: 0;
+        font-size: 14px;
+
+    }
+
+    .input.dynamic + .label {
+        top: 0;
+        font-size: 14px;
+    }
+
+    .password-count {
+        color: $label-grey;
+    }
+
+    #email {
+        background: url('/image/eye.svg') no-repeat 97% center;
+        background-size: 3%;
+    }
+
+    #password {
+        background: url('/image/eye.svg') no-repeat 97% center;
+        background-size: 3%;
+    }
+
+    .email-warning {
+        display: none;
+    }
+
+    .email-warning-show {
+        display: show;
+        padding-bottom: 0;
+        color: $email-warning;
+    }
+}
+
+.select {
+    -webkit-appearance: none;
+    height: $input-height;
+    border: 1px solid $light-grey;
+    color: darken($light-grey, 30%);
+    font-family: $font-stack;
+    font-size: $input-font-size;
+    margin: 10px 0;
+    padding: 10px 10px 10px 20px;
+    background: url('/image/select.svg') no-repeat 97% center;
+    background-size: 3%;
+}
