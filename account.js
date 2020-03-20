@@ -1,5 +1,4 @@
-
-// // inputs
+// inputs
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
@@ -9,8 +8,7 @@ const emailLabel = document.querySelector('#email + .label');
 const passwordCount = document.querySelector('.password-count');
 const eamilWarning = document.querySelector('.email-warning');
 
-
-// colors
+// colors code are taken from config scss file
 const secondaryColor = '#276ef9';
 const darkGrey = '#333333';
 const lightGrey = '#ededed';
@@ -18,7 +16,7 @@ const whiteGrey = '#ffffff';
 const labelGrey = '#a1a1a1';
 const warning = '#f53d3b';
 
-// dynamic functions
+// to check if input is not empty and to keep the label on border
 const onBlur = function(event) {
     if(event.target.value.trim()) {
         event.target.classList.add('dynamic');

@@ -64,7 +64,6 @@
 }
 
 .select {
-  -webkit-appearance: none;
   height: 50px;
   border: 1px solid #ededed;
   color: #a1a1a1;
@@ -74,6 +73,7 @@
   padding: 10px 10px 10px 20px;
   background: url("/image/select.svg") no-repeat 97% center;
   background-size: 3%;
+  -webkit-appearance: none;
 }
 
 .next-btn {
@@ -144,7 +144,7 @@ body {
 
 .heading {
   width: 35%;
-  height: 950px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +174,7 @@ body {
 
 @media only screen and (max-width: 1600px) {
   .form-wraper {
-    padding: 0 150px;
+    padding: 0 200px;
   }
   .heading p {
     padding: 0 50px;
@@ -183,8 +183,26 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .form-wraper {
+    padding: 0 100px;
+    height: 100vh;
+  }
+  .heading p {
     padding: 0 50px;
-    margin-top: 200px;
+  }
+  .heading {
+    display: none;
+  }
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-wraper {
+    padding: 0 10px;
+    height: 100vh;
   }
   .heading p {
     padding: 0 50px;

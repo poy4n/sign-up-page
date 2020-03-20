@@ -47,7 +47,7 @@ body {
 
 .heading {
     width: 35%;
-    height: 950px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,10 +68,9 @@ body {
     }
 }
 
-
 @media only screen and (max-width: $break-medium) {
     .form-wraper {
-        padding: 0 150px;
+        padding: 0 200px;
     }
 
     .heading p {
@@ -81,8 +80,27 @@ body {
 
 @media only screen and (max-width: $break-small) {
     .form-wraper {
+        padding: 0 100px;
+        height: 100vh;
+    }
+
+    .heading p {
         padding: 0 50px;
-        margin-top: 200px;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: $break-very-small) {
+    .form-wraper {
+        padding: 0 10px;
+        height: 100vh;
     }
 
     .heading p {
