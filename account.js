@@ -16,7 +16,7 @@ const whiteGrey = '#ffffff';
 const labelGrey = '#a1a1a1';
 const warning = '#f53d3b';
 
-// to check if input is not empty and to keep the label on border
+// if input is not empty keep the label on border
 const onBlur = function(event) {
     if(event.target.value.trim()) {
         event.target.classList.add('dynamic');
@@ -25,7 +25,9 @@ const onBlur = function(event) {
     }
 }
 
-// enable button
+// enable the button
+// instead of using classList - add/remove class to button
+// updating the button is done in js
 nextButton.disabled = true;
 nextButton.style.background = lightGrey;
 nextButton.style.color = darkGrey;
@@ -40,6 +42,8 @@ const enableButton = function() {
 }
 
 // validate email address
+// this block displays the warning to the user in case '@' is missing as per the task
+// in-built input type 'email' validate the string to make sure it is a valid email address once button is pressed
 const validateEmail = function() {
     if(email.value !== '' && email.value.includes('@') === false) {
         email.style.border = `1px solid ${warning}`;

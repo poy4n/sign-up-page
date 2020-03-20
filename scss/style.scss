@@ -9,13 +9,14 @@
 }
 
 body {
-    background-color: $primary-color;
+    background-color: $secondary-color;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    background-color: $primary-color;
+    margin-left: 60px;
 }
 
 .form-wraper  {
@@ -25,24 +26,34 @@ body {
     padding: 0 400px;
     width: 65%;
     font-family: $font-stack;
-
+    position: relative;
+    
+    
     h1, p {
         padding: 20px 0px;
         color: $dark-grey;
         font-family: $font-stack;
-
     }
-
+    
     p {
         line-height: 20px; 
         padding: 10px 0px;
         font-size: $parag-font-size;
     }
-
+    
     a {
         text-decoration: none;
         color: $secondary-color;
     }
+}
+
+.page-count {
+    position: absolute;
+    top: 20px;
+    right: 700px;
+    font-weight: bold;
+    color: $dark-grey;
+    font-size: $parag-font-size;
 }
 
 .heading {
@@ -67,6 +78,7 @@ body {
         font-size: $parag-font-size;
     }
 }
+
 
 @media only screen and (max-width: $break-medium) {
     .form-wraper {
