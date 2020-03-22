@@ -102,6 +102,10 @@ body {
     .heading p {
         padding: 0 50px;
     }
+
+    .heading {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: $break-small) {

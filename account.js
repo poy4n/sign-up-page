@@ -11,7 +11,7 @@ const container = document.querySelector('.container');
 
 // colors code are taken from config scss file
 const secondaryColor = '#276ef9';
-const darkGrey = '#333333';
+const darkGrey = '#aaaaaa';
 const lightGrey = '#ededed';
 const whiteGrey = '#ffffff';
 const labelGrey = '#a1a1a1';

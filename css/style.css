@@ -209,12 +209,15 @@ body {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1700px) {
   .form-wraper {
     padding: 0 150px;
   }
   .heading p {
     padding: 0 50px;
+  }
+  .heading {
+    display: none;
   }
 }
 
