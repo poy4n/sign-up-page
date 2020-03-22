@@ -5,13 +5,14 @@
     padding: 10px 0;
 
     .input {
-        background: $primary-color;
         width: 100%;
         padding: 10px 10px 10px 20px;
         border-radius: 5px;
         border: 1px solid $light-grey;
         height: $input-height;
         font-size: $input-font-size;
+        background-color: $primary-color;
+        color: $dark-grey;
     }
 
     .label {
@@ -21,7 +22,7 @@
         left: 20px;
         padding: 0 2px;
         font-size: $input-font-size;
-        background: $primary-color;
+        background-color: $primary-color;
         color: $label-grey;
         font-family: $font-stack;
     }
@@ -43,15 +44,19 @@
 
     #email {
         background: url('/image/eye.svg') no-repeat 97% center;
-        background-size: 3%;
+        background-size: 14px;
+    }
+
+    .input:valid {
+        border: none;
     }
 
     #password {
         background: url('/image/eye.svg') no-repeat 97% center;
-        background-size: 3%;
+        background-size: 14px;
     }
 
-    .email-warning {
+    .email-warning-hide {
         display: none;
     }
 
@@ -71,6 +76,6 @@
     margin: 10px 0;
     padding: 10px 10px 10px 20px;
     background: url('/image/select.svg') no-repeat 97% center;
-    background-size: 3%;
+    background-size: 14px;
     -webkit-appearance: none;
 }

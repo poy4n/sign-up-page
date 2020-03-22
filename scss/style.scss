@@ -17,17 +17,19 @@ body {
     flex-direction: row;
     background-color: $primary-color;
     margin-left: 60px;
+    margin-right: 650px;
+    justify-content: center;
+    position: relative;
 }
 
 .form-wraper  {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 400px;
+    padding: 0 150px;
     width: 65%;
     font-family: $font-stack;
-    position: relative;
-    
+    height: 100vh;
     
     h1, p {
         padding: 20px 0px;
@@ -50,10 +52,21 @@ body {
 .page-count {
     position: absolute;
     top: 20px;
-    right: 700px;
+    right: 40px;
     font-weight: bold;
     color: $dark-grey;
-    font-size: $parag-font-size;
+    font-size: $input-font-size;
+    display: flex;
+
+    .dots {
+        color: $label-grey;
+        margin-left: 10px;
+    }
+
+    .dot-dark {
+        color: $dark-grey;
+        margin-left: 10px;
+    }
 }
 
 .heading {
@@ -79,10 +92,9 @@ body {
     }
 }
 
-
 @media only screen and (max-width: $break-medium) {
     .form-wraper {
-        padding: 0 200px;
+        padding: 0 150px;
     }
 
     .heading p {
@@ -92,7 +104,7 @@ body {
 
 @media only screen and (max-width: $break-small) {
     .form-wraper {
-        padding: 0 100px;
+        padding: 0 50px;
         height: 100vh;
     }
 
