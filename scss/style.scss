@@ -94,20 +94,6 @@ body {
     }
 }
 
-@media only screen and (max-width: $break-medium) {
-    .form-wraper {
-        padding: 0 150px;
-    }
-
-    .heading p {
-        padding: 0 50px;
-    }
-
-    .heading {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: $break-small) {
     .form-wraper {
         padding: 0 50px;
