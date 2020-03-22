@@ -7,6 +7,12 @@
     <title>Sign Up</title>
 </head>
 <body>
+
+    <div class="heading">
+        <h2>Dummy Heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cumque, quasi quo obcaecati nobis eaque quod natus doloremque ipsa error.</p>
+    </div>
+
     <div class="container">
         
         <form class="form-wraper" method="POST" name="sign up">
@@ -33,7 +39,7 @@
             </select>
 
             <div class="input-wraper">
-                <input class="input" type="password" id="password" name="password" onblur="onBlur(event)">
+                <input class="input" type="password" id="password" name="password" onblur="onBlur(event)" required>
                 <label class="label" for="password">Password</label>
                 <p class="password-count">Minimum 8 characters</p>
             </div>
@@ -43,11 +49,8 @@
             <p>By clicking the "Next" button, you agree to creating a free account, and to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
         </form>
 
-        <!-- <div class="heading">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cumque, quasi quo obcaecati nobis eaque quod natus doloremque ipsa error.</p>
-            <h2>Dummy Heading</h2>
-        </div> -->
     </div>
+
 
     <script src="account.js"></script>
 </body>

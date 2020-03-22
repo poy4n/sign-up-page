@@ -63,7 +63,7 @@ const validateEmail = function() {
 }
 
 // validate password
-// this is added to highlight min requirements of the password when not met
+// this is added to red flag min requirements of the password when not met
 const validatePassword = function() {
     if(password.value.length < 8) {
         passwordCount.style.color = `${warning}`;
@@ -73,7 +73,7 @@ const validatePassword = function() {
 }
 
 // page count and dots to be dynamic and created in JS
-// event listener added to next button to render next page
+// event listener added to next button to render next count
 let page = document.createElement('p');
 page.textContent = 'Step 1 of 3';
 page.classList.add('page-count');
