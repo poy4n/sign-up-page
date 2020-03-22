@@ -209,15 +209,13 @@ body {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1600px) {
   .form-wraper {
     padding: 0 150px;
+    height: 100vh;
   }
   .heading p {
     padding: 0 50px;
-  }
-  .heading {
-    display: none;
   }
 }
 
@@ -233,9 +231,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .heading {
-    display: none;
   }
 }
 
