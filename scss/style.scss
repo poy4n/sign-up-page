@@ -94,6 +94,17 @@ body {
     }
 }
 
+@media only screen and (max-width: $break-medium) {
+    .form-wraper {
+        padding: 0 150px;
+        height: 100vh;
+    }
+
+    .heading p {
+        padding: 0 50px;
+    }
+}
+
 @media only screen and (max-width: $break-small) {
     .form-wraper {
         padding: 0 50px;
@@ -106,10 +117,6 @@ body {
 
     .container {
         justify-content: center;
-    }
-
-    .heading {
-        display: none;
     }
 }
 
